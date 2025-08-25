@@ -54,11 +54,13 @@ class Queue:
         if self.is_empty():
             return "There is no element to delete in the queue."
         else:
+            node_value = self.ll.head.value
             if self.ll.head == self.ll.tail:
                 self.ll.head = None
                 self.ll.tail = None
+                return node_value
             else:
-                node_value = self.ll.head.value
+
                 self.ll.head = self.ll.head.next
                 return node_value
 

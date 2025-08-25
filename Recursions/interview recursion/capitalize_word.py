@@ -12,8 +12,16 @@ def capitalizeWord(arr):
 
 arr = ['i', "am", 'into', 'mature']
 
+
+
+
 print(capitalizeWord(arr))
 
 print(arr)
 # arr = [element.upper() for element in arr]
 # print(arr)
+
+for i in range(len(arr)):
+    arr[i] = arr[i].upper()
+
+print(arr)
